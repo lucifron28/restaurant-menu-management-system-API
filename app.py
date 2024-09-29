@@ -22,18 +22,18 @@ class Item(BaseModel):
 
 # menu items for demonstration purposes
 items = [
-    Item(id=1, name="Margherita Pizza", description="Classic pizza with tomatoes, mozzarella, and basil", price=12.99, category="Pizza"),
-    Item(id=2, name="Caesar Salad", description="Fresh romaine lettuce with Caesar dressing", price=8.99, category="Salad"),
-    Item(id=3, name="Pepperoni Pizza", description="Pizza with pepperoni slices", price=14.99, category="Pizza"),
-    Item(id=4, name="Spaghetti Carbonara", description="Spaghetti with creamy carbonara sauce", price=13.99, category="Pasta"),
-    Item(id=5, name="Garlic Bread", description="Toasted bread with garlic and butter", price=4.99, category="Appetizer"),
-    Item(id=6, name="Tiramisu", description="Classic Italian dessert with coffee and mascarpone", price=6.99, category="Dessert"),
-    Item(id=7, name="Minestrone Soup", description="Hearty vegetable soup", price=7.99, category="Soup"),
-    Item(id=8, name="Chicken Alfredo", description="Pasta with creamy Alfredo sauce and chicken", price=15.99, category="Pasta"),
-    Item(id=9, name="Greek Salad", description="Salad with feta cheese, olives, and cucumbers", price=9.99, category="Salad"),
-    Item(id=10, name="Bruschetta", description="Grilled bread with tomatoes and basil", price=5.99, category="Appetizer"),
-    Item(id=11, name="Lasagna", description="Layered pasta with meat and cheese", price=16.99, category="Pasta"),
-    Item(id=12, name="Chocolate Lava Cake", description="Warm chocolate cake with a molten center", price=7.99, category="Dessert")
+    Item(id=1, name="Margherita Pizza", description="Classic pizza with tomatoes, mozzarella, and basil", price=12.99, category="pizza"),
+    Item(id=2, name="Caesar Salad", description="Fresh romaine lettuce with Caesar dressing", price=8.99, category="salad"),
+    Item(id=3, name="Pepperoni Pizza", description="Pizza with pepperoni slices", price=14.99, category="pizza"),
+    Item(id=4, name="Spaghetti Carbonara", description="Spaghetti with creamy carbonara sauce", price=13.99, category="pasta"),
+    Item(id=5, name="Garlic Bread", description="Toasted bread with garlic and butter", price=4.99, category="appetizer"),
+    Item(id=6, name="Tiramisu", description="Classic Italian dessert with coffee and mascarpone", price=6.99, category="dessert"),
+    Item(id=7, name="Minestrone Soup", description="Hearty vegetable soup", price=7.99, category="soup"),
+    Item(id=8, name="Chicken Alfredo", description="Pasta with creamy Alfredo sauce and chicken", price=15.99, category="pasta"),
+    Item(id=9, name="Greek Salad", description="Salad with feta cheese, olives, and cucumbers", price=9.99, category="salad"),
+    Item(id=10, name="Bruschetta", description="Grilled bread with tomatoes and basil", price=5.99, category="appetizer"),
+    Item(id=11, name="Lasagna", description="Layered pasta with meat and cheese", price=16.99, category="pasta"),
+    Item(id=12, name="Chocolate Lava Cake", description="Warm chocolate cake with a molten center", price=7.99, category="dessert")
 ]
 
 @app.get("/menu/", response_model=List[Item])
