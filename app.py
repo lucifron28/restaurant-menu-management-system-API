@@ -47,7 +47,7 @@ def get_item(item_id: int):
             return item
     raise HTTPException(status_code=404, detail="Item not found")
 
-@app.get("menu/category/{category}", response_model=List[Item])
+@app.get("/menu/category/{category}", response_model=List[Item])
 def get_category_items(category: str):
     category_items = [item for item in items if item.category == category]
     return category_items
